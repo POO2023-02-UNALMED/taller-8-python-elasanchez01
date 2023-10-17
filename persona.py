@@ -1,19 +1,30 @@
-from persona import Persona
+class Persona:
+    def __init__(self, nombre, edad, altura, sexo):
+        self._nombre = nombre
+        self._edad = edad
+        self._altura = altura
+        self._sexo = sexo
 
-class Deportista(Persona):
-    def __init__(self, nombre, edad, altura, sexo, deporte, añosPracticando):
-        super().__init__(nombre, edad, altura, sexo)
-        self._deporte = deporte
-        self._añosPracticando = añosPracticando
+    def getNombre(self):
+        return self._nombre
 
-    def getDeporte(self):
-        return self._deporte
+    def setNombre(self, nombre):
+        self._nombre = nombre
 
-    def setDeporte(self, deporte):
-        self._deporte = deporte
+    def getEdad(self):
+        return self._edad
 
-    def getAñosPracticando(self):
-        return self._añosPracticando
+    def setEdad(self, edad):
+        self._edad = edad
 
-    def setAñosPracticando(self, añosPracticando):
-        self._añosPracticando = añosPracticando
+    def getAltura(self):
+        return self._altura
+
+    def setAltura(self, altura):
+        self._altura = altura
+
+    def getSexo(self):
+        return self._sexo
+
+    def setSexo(self, sexo):
+        self._sexo = sexo
